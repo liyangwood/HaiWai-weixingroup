@@ -10,6 +10,9 @@ Router.configure({
         return Meteor.subscribe('WeixinGroup');
     }
 });
-
 Router.route('/', {name: 'weixin-group-list'});
 
+Router.route('/add-weixin-group', {
+    name : 'addWeixinGroup',
+    data : {}
+});

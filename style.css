@@ -1,0 +1,26 @@
+.hw-blue-button {
+  background: #39b8eb;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 15px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+.hw-blue-button:hover {
+  color: #eeeeee;
+  background: #039bbb;
+}
+body {
+  background: #eeeeee;
+}
+.hw-page {
+  max-width: 960px;
+}
+.hw-tpl-filterBox {
+  min-height: 120px;
+  background: red;
+}
