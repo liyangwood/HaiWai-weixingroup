@@ -3,6 +3,6 @@
 
 //global
 (function(){
-    this.WeixinGroup = new Mongo.Collection('posts');
+    this.WeixinGroup = new Mongo.Collection('WeixinGroup');
 })();
 
