@@ -2,13 +2,26 @@
 
     {{> listFilterBox}}
 
-    {{#each list}}
-        <div>
 
-            {{this.name}}
-        </div>
+    <div class="hw-wg-list row">
+        {{#each list}}
 
-    {{/each}}
+            {{> weixinGroupListItem}}
 
+        {{/each}}
+    </div>
+
+
+
+</template>
+
+
+<template name="weixinGroupListItem">
+
+    <div class="hw-wg-item col col-md-3">
+        <img class="hw-img" src="{{this.image}}" />
+        <b>{{this.name}}</b>
+        <span>{{this.owner}}</span>
+    </div>
 
 </template>
