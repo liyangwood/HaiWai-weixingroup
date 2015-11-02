@@ -69,7 +69,9 @@ WeixinGroup.addTestData = function(){
         tag : '互联网，微信，创业群'
     };
 
-    WeixinGroup.insert(data);
+    WeixinGroup.insertData(data, function(){
+        console.log('add test data');
+    });
 };
 
 _.extend(WeixinGroup, {
