@@ -1,15 +1,27 @@
 <template name="weixinGroupList">
 
-    {{> listFilterBox}}
+    <!--<div class="container">-->
+        <!--{{> listFilterBox}}-->
+    <!--</div>-->
 
 
-    <div class="hw-wg-list row">
-        {{#each list}}
 
-            {{> weixinGroupListItem}}
-
-        {{/each}}
+    <div class="hw-wg-navbar">
+        <div class="container">
+            <label>海外微信群</label>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="hw-wg-list row">
+            {{#each list}}
+
+                {{> weixinGroupListItem}}
+
+            {{/each}}
+        </div>
+    </div>
+
 
 
 

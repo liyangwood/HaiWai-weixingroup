@@ -22,7 +22,7 @@
 body {
   background: #eeeeee;
 }
-.hw-page {
+.container {
   max-width: 960px;
 }
 .hw-tpl-filterBox {
@@ -30,7 +30,7 @@ body {
   background: red;
 }
 .hw-wg-list {
-  margin: 10px -10px;
+  margin: 0px -10px;
 }
 .hw-wg-item {
   position: relative;
@@ -87,4 +87,18 @@ body {
 .hw-wg-item .hw-time {
   font-size: 12px;
   color: #cdcdcd;
+}
+.hw-wg-navbar {
+  margin-top: 12px;
+  height: 40px;
+  width: 100%;
+  background: #39b8eb;
+}
+.hw-wg-navbar label {
+  color: #eeeeee;
+  line-height: 40px;
+  font-size: 16px;
+}
+.hw-add-weixinGroup .form-group label {
+  text-align: left;
 }

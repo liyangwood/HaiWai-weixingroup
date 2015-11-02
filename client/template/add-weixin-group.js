@@ -27,5 +27,16 @@ Template.addWeixinGroup.events({
                 Router.go('/');
             }
         });
+    },
+    'change [role="upload_image"]' : function(e){
+        var files = e.target.files;
+        if(files){
+            util.uploadImage(files[0], function(flag, url){
+                console.log(flag, url);
+                if(flag){
+                    util.findRole($(document), 'image').val(url);
+                }
+            });
+        }
     }
 });
