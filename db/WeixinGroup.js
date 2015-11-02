@@ -48,6 +48,9 @@ WeixinGroup.attachSchema(new SimpleSchema({
     tag : {
         type : String,
         optional : true
+    },
+    createTime : {
+        type : Date
     }
 
 
@@ -68,6 +71,14 @@ WeixinGroup.addTestData = function(){
 
     WeixinGroup.insert(data);
 };
+
+_.extend(WeixinGroup, {
+    insertData : function(data, callback){
+        data.createTime = new Date().getTime();
+        var uuid = WeixinGroup.insert(data);
+        callback.call(null, uuid);
+    }
+});
 
 
 

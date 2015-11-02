@@ -18,10 +18,23 @@
 
 <template name="weixinGroupListItem">
 
-    <div class="hw-wg-item col col-md-3">
-        <img class="hw-img" src="{{this.image}}" />
-        <b>{{this.name}}</b>
-        <span>{{this.owner}}</span>
+    <div class="col col-md-4" style="padding: 0;">
+        <div class="hw-wg-item">
+
+            <div class="hw-img">
+                <img src="{{this.image}}" />
+                <label>{{this.name}}</label>
+            </div>
+
+            <div class="right">
+                <p class="hw-desc">{{this.description}}</p>
+
+                <p class="hw-time">{{this.createTime}}</p>
+            </div>
+
+
+        </div>
+
     </div>
 
 </template>

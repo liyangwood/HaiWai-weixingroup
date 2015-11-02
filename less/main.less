@@ -1,28 +1,77 @@
 
 
 .hw-wg-list{
-	padding: 20px 0;
-	background: transparent;
+	margin: 10px -10px;
 }
 
 .hw-wg-item{
 	position: relative;
-	min-height: 150px;
-	text-align: center;
-	padding: 15px 0;
-	margin-top: 20px;
-	//outline: 3px solid @blue_color;
+	text-align: left;
+	padding: 0;
+	padding-left: 85px;
+	display: block;
+	margin: 15px 10px 0;
+
 
 
 	.hw-img{
-		width: 200px;
-		height: 200px;
-		border: 3px solid #ffffff;
+		width : 70px;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 4px;
+		border: 1px solid @border_color;
+		overflow: hidden;
+
+		img{
+			width: 70px;
+			height: 70px;
+		}
+
+		label{
+			position: absolute;
+			background: rgba(0, 0, 0, 0.7);
+			bottom: 0;
+			left: 0;
+			color: #ffffff;
+			font-size: 12px;
+			display: block;
+			width: 100%;
+			height: 20px;
+			margin: 0;
+			text-align: center;
+			line-height: 20px;
+		}
 	}
 
-	b{
-		display: block;
+	.right{
+		border: 1px solid @border_color;
+		height: 90px;
+		border-radius: 4px;
+		padding: 0 8px;
+		
+		p{
+			margin: 0;
+		}
+	}
+
+	.hw-desc{
+		margin-top: 5px;
+		font-size: 14px;
+		color: @font-black-color;
+		overflow: hidden;
+		display: inline-block;
 	}
 
 
+	.hw-time{
+		font-size: 12px;
+		color: @font-light-color;
+	}
+
+
+	&:hover{
+
+	}
 }

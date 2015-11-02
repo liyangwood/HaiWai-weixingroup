@@ -14,13 +14,13 @@ Template.addWeixinGroup.events({
 
             owner : 'Jacky',
             ownerId : 'jacky112233',
-            image : 'http://www.haiwai.com/images/hw_logo1.png',
+            image : util.findRole(elem, 'image').val(),
             qrCode : ''
         };
 
 
 
-        WeixinGroup.insert(data, function(err, rs){
+        WeixinGroup.insertData(data, function(rs){
             if(rs){
                 alert('添加成功');
 
