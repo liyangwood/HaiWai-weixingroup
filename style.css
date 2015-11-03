@@ -11,7 +11,7 @@
   width: 100%;
 }
 .hw-blue-button:hover {
-  color: #f3f3f3;
+  color: #eeeeee;
   background: #039bbb;
 }
 .hw-line {
@@ -20,7 +20,7 @@
   border-bottom: 1px solid #dedede;
 }
 body {
-  background: #f3f3f3;
+  background: #eeeeee;
 }
 .container {
   max-width: 960px;
@@ -67,26 +67,43 @@ body {
   margin: 0;
   text-align: center;
   line-height: 20px;
+  font-weight: 400;
 }
 .hw-wg-item .right {
-  border: 1px solid #cdcdcd;
   height: 90px;
   border-radius: 4px;
   padding: 0 8px;
+  position: relative;
+  background: #ffffff;
+}
+.hw-wg-item .right em {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent #ffffff transparent transparent;
+  top: 12px;
+  left: -20px;
 }
 .hw-wg-item .right p {
   margin: 0;
 }
-.hw-wg-item .hw-desc {
+.hw-wg-item .right .hw-desc {
   margin-top: 5px;
   font-size: 14px;
-  color: #212121;
-  overflow: hidden;
+  color: #454545;
   display: inline-block;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.hw-wg-item .hw-time {
+.hw-wg-item .right .hw-time {
   font-size: 12px;
   color: #cdcdcd;
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
 }
 .hw-wg-navbar {
   margin-top: 12px;
@@ -95,10 +112,58 @@ body {
   background: #39b8eb;
 }
 .hw-wg-navbar label {
-  color: #f3f3f3;
+  color: #eeeeee;
   line-height: 40px;
   font-size: 16px;
 }
 .hw-add-weixinGroup .form-group label {
   text-align: left;
+}
+.hw-wg-item-page {
+  position: relative;
+  padding-top: 60px;
+}
+.hw-wg-item-page .c1 {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.hw-wg-item-page .c1 .c_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 2px #b3b3b3;
+}
+.hw-wg-item-page .c2 {
+  width: 100%;
+  min-height: 200px;
+  background: #ffffff;
+  padding: 60px 15px 40px;
+}
+.hw-wg-item-page .c2 h4 {
+  color: #454545;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.hw-wg-item-page .c2 .c_des {
+  color: #454545;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #39b8eb;
+}
+.hw-wg-item-page .c2 label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #454545;
+  font-weight: 400;
+}
+.hw-wg-item-page .c2 label:last-of-type {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #39b8eb;
 }

@@ -15,11 +15,11 @@ Template.addWeixinGroup.events({
             owner : 'Jacky',
             ownerId : 'jacky112233',
             image : util.findRole(elem, 'image').val(),
-            qrCode : ''
+            qrCode : util.findRole(elem, 'qrCode').val()
         };
 
 
-
+        console.log(data);
         WeixinGroup.insertData(data, function(err, rs){
             if(rs){
                 alert('添加成功');
@@ -27,7 +27,7 @@ Template.addWeixinGroup.events({
                 Router.go('/');
             }
             else{
-                console.log(err);
+                //console.log(err);
                 alert(err);
             }
         });
@@ -35,14 +35,16 @@ Template.addWeixinGroup.events({
     'change [role="upload_image"]' : function(e){
         var files = e.target.files;
         if(files){
-            var btn = $('.js_uploadbtn'),
-                img = $('.js_img');
+            var elem = $(e.target).closest('.js_box');
+
+            var btn = elem.find('.js_uploadbtn'),
+                img = elem.find('.js_img');
 
             btn.button('loading');
             util.uploadImage(files[0], function(flag, url){
                 console.log(flag, url);
                 if(flag){
-                    util.findRole($(document), 'image').val(url);
+                    elem.find('input[type="hidden"]').val(url);
                     img.attr('src', url).show();
                     btn.button('reset');
                 }

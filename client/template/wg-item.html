@@ -1,8 +1,26 @@
 <template name="wgItem">
 
     {{#with data}}
-    <div class="container">
-        {{_id}}
+    <div class="hw-wg-item-page">
+
+        <div class="c1">
+            <img class="c_img" src="{{image}}" />
+        </div>
+
+        <div class="c2">
+            <h4>{{name}}</h4>
+            <p class="c_des">{{description}}</p>
+
+            <label style="margin-top: 20px;">群主微信 ：{{owner}}</label>
+            <label>行业类别 ：{{category}}</label>
+            <label>所在区域 ：{{location}}</label>
+
+            <label>群标签 ：{{tag}}</label>
+            <label>添加时间 ：{{formatDate createTime}}</label>
+        </div>
+
+
+
     </div>
     {{/with}}
 </template>
