@@ -11,7 +11,7 @@
   width: 100%;
 }
 .hw-blue-button:hover {
-  color: #eeeeee;
+  color: #f3f3f3;
   background: #039bbb;
 }
 .hw-line {
@@ -20,7 +20,7 @@
   border-bottom: 1px solid #dedede;
 }
 body {
-  background: #eeeeee;
+  background: #f3f3f3;
 }
 .container {
   max-width: 960px;
@@ -95,7 +95,7 @@ body {
   background: #39b8eb;
 }
 .hw-wg-navbar label {
-  color: #eeeeee;
+  color: #f3f3f3;
   line-height: 40px;
   font-size: 16px;
 }

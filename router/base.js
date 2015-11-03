@@ -16,3 +16,7 @@ Router.route('/add-weixin-group', {
     name : 'addWeixinGroup',
     data : {}
 });
+
+Router.route('/group-item/:gid', {
+    name : 'weixinGroupItem'
+});
