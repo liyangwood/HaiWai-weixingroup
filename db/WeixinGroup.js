@@ -2,14 +2,13 @@
 
 
 //global
-
 WeixinGroup = new Mongo.Collection('WeixinGroup');
 
 
 WeixinGroup.attachSchema(new SimpleSchema({
     name : {
         type : String,
-        label : 'Name',
+        label : '群名称',
         max : 30
     },
     owner : {
@@ -37,8 +36,7 @@ WeixinGroup.attachSchema(new SimpleSchema({
         optional : true
     },
     image : {
-        type : String,
-        optional : true
+        type : String
     },
     qrCode : {
         type : String,
@@ -51,10 +49,19 @@ WeixinGroup.attachSchema(new SimpleSchema({
     },
     createTime : {
         type : Date
+    },
+    updateTime : {
+        type : Date
     }
 
 
 }));
+
+WeixinGroup.allow({
+    insert : function(){
+        return true;
+    }
+});
 
 WeixinGroup.addTestData = function(){
     var data = {
@@ -76,10 +83,15 @@ WeixinGroup.addTestData = function(){
 
 _.extend(WeixinGroup, {
     insertData : function(data, callback){
-        data.createTime = new Date().getTime();
-        var uuid = WeixinGroup.insert(data);
-        callback.call(null, uuid);
-    }
+        data.createTime = Date.now();
+        data.updateTime = data.createTime;
+        WeixinGroup.insert(data, function(err, uuid){
+
+            callback(err, uuid);
+        });
+
+    },
+    updateData : function(){}
 });
 
 

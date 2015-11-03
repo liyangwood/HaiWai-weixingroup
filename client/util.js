@@ -25,7 +25,7 @@ util.extend(util, {
 
     uploadImage : function(file, callback){
         var root = 'http://beta.haiwai.com';
-console.log(file);
+
         if(!file) return;
 
         var fr = new FileReader();
@@ -49,6 +49,23 @@ console.log(file);
         };
 
         fr.readAsDataURL(file);
+    },
+
+    formatDate : function(date, format){
+        var d = new Date(date);
+        var year = d.getFullYear(),
+            month = addZero(d.getMonth() + 1),
+            day = addZero(d.getDate()),
+            hour = addZero(d.getHours()),
+            min = addZero(d.getMinutes()),
+            sec = addZero(d.getSeconds());
+
+        function addZero(x){
+            if(x<10) return '0'+x;
+            return x;
+        }
+
+        return format.replace('yy', year).replace('mm', month).replace('dd', day).replace('h', hour).replace('m', min).replace('s', sec);
     }
 });
 

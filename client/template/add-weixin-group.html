@@ -3,9 +3,9 @@
 
     <form class="container hw-add-weixinGroup form-horizontal">
         <div class="form-group">
-            <label class="col-sm-3 control-label">群名称</label>
+            <label class="col-sm-3 control-label">群名称（必填）</label>
             <div class="col-sm-9">
-                <input type="text" role="name" class="form-control" placeholder="">
+                <input type="text" role="name" class="form-control" placeholder="微信群名称">
             </div>
         </div>
         <div class="form-group">
@@ -37,14 +37,20 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-3 control-label">头像URL</label>
+            <label class="col-sm-3 control-label">头像</label>
             <div class="col-sm-9">
                 <input type="hidden" role="image" class="form-control" placeholder="">
-                <input type="file" role="upload_image" class="form-control" placeholder="">
+
+                <a data-loading-text="上传头像中..."
+                   class="btn hw-blue-button js_uploadbtn" style="width: 120px;">上传</a>
+
+                <input type="file" style="opacity: 0;position: absolute;top: 0;width: 120px;height: 40px;" role="upload_image" class="form-control">
+
+                <img src="" style="width: 50px; height: 50px;display: none;" class="js_img" />
             </div>
         </div>
 
-        <button type="submit" class="btn hw-blue-button">确认</button>
+        <button style="margin-top: 40px; margin-bottom: 50px;" type="submit" class="btn hw-blue-button">确认</button>
 
     </form>
 

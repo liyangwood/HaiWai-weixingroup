@@ -2,6 +2,8 @@
 
 Template.weixinGroupList.helpers({
     list : function(){
-        return WeixinGroup.find();
+        return WeixinGroup.find({}, {
+            sort : {'createTime': -1}
+        });
     }
 });

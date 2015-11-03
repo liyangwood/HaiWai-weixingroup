@@ -20,21 +20,31 @@ Template.addWeixinGroup.events({
 
 
 
-        WeixinGroup.insertData(data, function(rs){
+        WeixinGroup.insertData(data, function(err, rs){
             if(rs){
                 alert('添加成功');
 
                 Router.go('/');
+            }
+            else{
+                console.log(err);
+                alert(err);
             }
         });
     },
     'change [role="upload_image"]' : function(e){
         var files = e.target.files;
         if(files){
+            var btn = $('.js_uploadbtn'),
+                img = $('.js_img');
+
+            btn.button('loading');
             util.uploadImage(files[0], function(flag, url){
                 console.log(flag, url);
                 if(flag){
                     util.findRole($(document), 'image').val(url);
+                    img.attr('src', url).show();
+                    btn.button('reset');
                 }
             });
         }
