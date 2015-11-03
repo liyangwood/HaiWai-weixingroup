@@ -31,7 +31,7 @@
 <template name="weixinGroupListItem">
 
     <div class="col col-md-4 js_box" style="padding: 0;">
-        <div class="hw-wg-item js_link" param="{{_id}}">
+        <a href="{{pathFor 'wgItem' gid=_id}}" class="hw-wg-item js_link">
 
             <div class="hw-img">
                 <img src="{{this.image}}" />
@@ -46,7 +46,7 @@
             </div>
 
 
-        </div>
+        </a>
 
     </div>
 
