@@ -167,3 +167,9 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px dashed #39b8eb;
 }
+.hw-wg-item-page .c2 .c_qr {
+  margin: 20px 0px 30px;
+}
+.hw-wg-item-page .c2 .c_qr img {
+  width: 100%;
+}

@@ -17,6 +17,11 @@
 
             <label>群标签 ：{{tag}}</label>
             <label>添加时间 ：{{formatDate createTime}}</label>
+
+
+            {{#if qrCode}}
+                <div class="c_qr"><img src="{{qrCode}}"></div>
+            {{/if}}
         </div>
 
 
