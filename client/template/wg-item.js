@@ -1,5 +1,9 @@
+
+
 Template.wgItem.helpers({
     data : function(){
-        console.log(arguments)
+        var gid = Session.get('routeParams')[0];
+
+        return WeixinGroup.findOne({'_id':gid});
     }
 });

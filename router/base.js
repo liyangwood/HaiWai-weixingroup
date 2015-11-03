@@ -10,7 +10,10 @@ Router.configure({
         return Meteor.subscribe('WeixinGroup');
     }
 });
-Router.route('/', {name: 'weixin-group-list'});
+Router.route('/', {
+    name: 'weixin-group-list'
+
+});
 
 Router.route('/add-weixin-group', {
     name : 'addWeixinGroup',
@@ -18,5 +21,12 @@ Router.route('/add-weixin-group', {
 });
 
 Router.route('/group-item/:gid', {
-    name : 'weixinGroupItem'
+    name : 'wgItem',
+    data : function(){
+        var gid = this.params.gid;
+        Session.set({
+            routeParams : [gid]
+        });
+    }
 });
+
