@@ -1,36 +1,84 @@
 <template name="addWeixinGroup">
 
+    <div class="container">
+        <div class="page-header hw-pager-header">
+            <h4 style="text-align: center;">海外微信群信息登记</h4>
+            <small>请将您自己或者参加的群信息输入进来，我们日后将提供群合作机会，如群管理工具、群讲座直播收藏项目、广告合作、活动联盟等等。谢谢。</small>
+        </div>
+    </div>
 
-    <form class="container hw-add-weixinGroup form-horizontal">
+
+
+    <form class="container hw-add-weixinGroup form-horizontal js_form">
         <div class="form-group">
-            <label class="col-sm-3 control-label">群名称（必填）</label>
+            <label class="col-sm-3 control-label require">群名称</label>
             <div class="col-sm-9">
                 <input type="text" role="name" class="form-control" placeholder="微信群名称">
             </div>
         </div>
+
         <div class="form-group">
-            <label class="col-sm-3 control-label">群行业</label>
+            <label class="col-sm-3 control-label require">群所在地区</label>
             <div class="col-sm-9">
-                <input type="text" role="category" class="form-control" placeholder="">
+                <input type="text" role="location" class="form-control" placeholder="如果不确定，可以以群主所在地为准">
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-sm-3 control-label">群标签</label>
+            <label class="col-sm-3 control-label">群所在地邮编</label>
             <div class="col-sm-9">
-                <input type="text" role="tag" class="form-control" placeholder="">
+                <input type="text" role="postCode" class="form-control" placeholder="例如：94537">
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-sm-3 control-label">群地区</label>
+            <label class="col-sm-3 control-label require">群主题</label>
             <div class="col-sm-9">
-                <input type="text" role="location" class="form-control" placeholder="">
+
+                <select role="catId" class="form-control">
+                    <option selected="true" value="-1">请选择</option>
+
+                    {{#each categoryList}}
+                    <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群标签</label>
+            <div class="col-sm-9">
+                <input type="text" role="tag" class="form-control" placeholder="逗号隔开 例如:理财，修车，团购……">
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-sm-3 control-label">群简介</label>
+            <label class="col-sm-3 control-label">目前群人数</label>
+            <div class="col-sm-9">
+
+                <select role="memberCount" class="form-control">
+                    <option value="100人以下">100人以下</option>
+                    <option selected="true" value="100-300人">100-300人</option>
+                    <option value="300以上">300以上</option>
+                    <option value="基本满的（500左右）">基本满的（500左右）</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">群主微信号</label>
+            <div class="col-sm-9">
+                <input type="text" role="ownerId" class="form-control" placeholder="wechat ID">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群简介</label>
             <div class="col-sm-9">
                 <textarea class="form-control js_info" role="description" placeholder=""></textarea>
             </div>
@@ -55,7 +103,7 @@
             <div class="col-sm-9 js_box">
                 <input type="hidden" role="qrCode" class="form-control" placeholder="">
 
-                <a data-loading-text="上传二维码中..."
+                <a data-loading-text="上传中..."
                    class="btn hw-blue-button js_uploadbtn" style="width: 120px;">上传</a>
 
                 <input type="file" style="opacity: 0;position: absolute;top: 0;width: 120px;height: 40px;" role="upload_image" class="form-control">
@@ -64,7 +112,9 @@
             </div>
         </div>
 
-        <button style="margin-top: 40px; margin-bottom: 50px;" type="submit" class="btn hw-blue-button">确认</button>
+        <button style="margin-top: 40px;" data-loading-text="正在提交..." type="button" class="js_btn1 btn hw-blue-button">提交</button>
+
+        <button style="margin-top: 20px; margin-bottom: 50px;" data-loading-text="正在提交..." type="button" class="js_btn2 btn hw-blue-button">提交并填写下一个</button>
 
     </form>
 
