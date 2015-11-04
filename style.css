@@ -39,8 +39,12 @@ body {
   border-top: 1px solid #cdcdcd;
   margin: 0;
 }
+.hw-tpl-filterBox .row {
+  margin: auto;
+}
 .hw-tpl-filterBox .col {
   overflow: hidden;
+  padding: 0;
 }
 .hw-tpl-filterBox .hw-label {
   font-style: normal;
