@@ -2,10 +2,31 @@
 
 Template.weixinGroupList.helpers({
     list : function(){
-        return WeixinGroup.find({}, {
-            sort : {'createTime': -1}
+        var sort = {
+            createTime : -1
+        };
+
+        var query = {};
+
+        var catId = Session.get('page_cat_id');
+
+        if('-1' !== catId){
+            query.catId = catId;
+        }
+
+        return WeixinGroup.find(query, {
+            sort : sort
         });
     }
+});
+
+Template.weixinGroupList.onCreated(function(){
+    Session.set('page_cat_id', '-1');
+
+    util.message.register('ChangeListFilter', function(e, param){
+        var catId = param.catId;
+        Session.set('page_cat_id', catId);
+    });
 });
 
 //Template.weixinGroupList.events({

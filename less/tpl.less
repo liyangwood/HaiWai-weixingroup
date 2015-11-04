@@ -1,4 +1,31 @@
 .hw-tpl-filterBox{
-	min-height: 120px;
-	background: red;
+	height: 40px;
+	background: @blue_color;
+	border-top: 1px solid @border_color;
+	margin: 0;
+
+	.col{
+		overflow: hidden;
+	}
+
+	.hw-label{
+		font-style: normal;
+		line-height: 40px;
+		font-size: 14px;
+		color: #ffffff;
+		margin-bottom: 0;
+		font-weight: 400;
+
+		.hw-icon{
+			color: #ffffff;
+
+		}
+
+		select{
+			position: relative;
+			background: transparent;
+			border : none;
+			outline: none;
+		}
+	}
 }

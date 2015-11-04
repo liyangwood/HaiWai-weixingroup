@@ -34,8 +34,30 @@ body {
   max-width: 960px;
 }
 .hw-tpl-filterBox {
-  min-height: 120px;
-  background: red;
+  height: 40px;
+  background: #39b8eb;
+  border-top: 1px solid #cdcdcd;
+  margin: 0;
+}
+.hw-tpl-filterBox .col {
+  overflow: hidden;
+}
+.hw-tpl-filterBox .hw-label {
+  font-style: normal;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.hw-tpl-filterBox .hw-label .hw-icon {
+  color: #ffffff;
+}
+.hw-tpl-filterBox .hw-label select {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 .hw-wg-list {
   margin: 0px -10px;
@@ -115,7 +137,6 @@ body {
   right: 10px;
 }
 .hw-wg-navbar {
-  margin-top: 12px;
   height: 40px;
   width: 100%;
   background: #39b8eb;

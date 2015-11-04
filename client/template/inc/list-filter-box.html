@@ -1,7 +1,20 @@
 <template name="listFilterBox">
 
-    <div class="hw-tpl-filterBox">
+    <div class="hw-tpl-filterBox row">
+        <div class="col col-xs-12">
+            <label class="hw-label">
+                <i class="hw-icon glyphicon glyphicon-th-list"></i>
+                <select class="js_cat" value="">
+                    <option selected="true" value="-1">全部主题</option>
+                    {{#each categoryList}}
+                    <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </label>
+        </div>
+        <!--<div class="col col-xs-6">-->
 
+        <!--</div>-->
     </div>
 
 </template>

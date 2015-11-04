@@ -69,6 +69,15 @@ util.extend(util, {
     }
 });
 
+util.message = {
+    register : function(name, callback){
+        $('body').bind(name, callback);
+    },
+    publish : function(name, data){
+        $('body').trigger(name, data);
+    }
+};
+
 
 
 
