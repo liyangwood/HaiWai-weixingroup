@@ -31,7 +31,7 @@ Template.addFeed.events({
 
         var btn = $(e.target);
 
-        var sid = Router.current().params.sid
+        var sid = Router.current().params.sid;
 
         btn.button('loading');
         DB.Feed.insertData({
