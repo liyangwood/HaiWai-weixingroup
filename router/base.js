@@ -50,3 +50,7 @@ Router.route('/:sid/feed/add', {
         });
     }
 });
+
+Router.route('/space/feed/:feedId', {
+    name : 'wxSpaceItemDetail'
+});

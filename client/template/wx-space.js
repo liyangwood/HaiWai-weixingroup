@@ -40,3 +40,15 @@ Template.wxSpaceListImageView.list = function(){
 
     return list;
 };
+
+Template.wxSpaceItemDetail.helpers({
+    feed : function(){
+        var feedId = Router.current().params.feedId;
+
+        var feed = DB.Feed.findOne({'_id':feedId});
+        var group = WeixinGroup.findOne({wxSpaceId:feed.wxSpaceId});
+        feed.group = group;
+
+        return feed;
+    }
+});

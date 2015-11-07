@@ -32,7 +32,7 @@
 
 <template name="wxSpaceListItem">
 
-    <a class="col col-md-6 js_box hw-sp-item">
+    <a href="{{pathFor 'wxSpaceItemDetail' feedId=_id}}" class="col col-md-6 js_box hw-sp-item">
 
         <p class="c_tlt">{{title}}</p>
         <p class="c_msg">{{content}}</p>
@@ -54,4 +54,29 @@
         </div>
         {{/each}}
     </div>
+</template>
+
+
+<template name="wxSpaceItemDetail">
+
+    <div class="container">
+        <div class="page-header hw-pager-header">
+            <h4 style="text-align: center;">{{feed.title}}</h4>
+
+            {{#with feed.group}}
+            {{name}}
+            {{/with}}
+
+            <div>
+                {{feed.content}}
+
+                {{#each feed.images}}
+
+                <img src="{{.}}" />
+
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
 </template>
