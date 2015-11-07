@@ -30,3 +30,26 @@ Router.route('/group-item/:gid', {
     }
 });
 
+
+Router.route('/space/list/:sid', {
+    name : 'wxSpaceList',
+    waitOn : function(){
+        return Meteor.subscribe('DB.Feed');
+    },
+    data : function(){
+        var sid = this.params.sid;
+        Session.set({
+            routeParams : [sid]
+        });
+    }
+});
+
+Router.route('/:sid/feed/add', {
+    name : 'addFeed',
+    data : function(){
+        var sid = this.params.sid;
+        Session.set({
+            routeParams : [sid]
+        });
+    }
+});

@@ -75,6 +75,9 @@ body {
   display: block;
   margin: 15px 10px 0;
 }
+.hw-wg-item a {
+  display: block;
+}
 .hw-wg-item .hw-img {
   width: 70px;
   height: 90px;

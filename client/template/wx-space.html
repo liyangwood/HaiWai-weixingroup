@@ -1,0 +1,36 @@
+<template name="wxSpaceList">
+
+
+    <div class="container">
+        <div class="page-header hw-pager-header">
+            <h4 style="text-align: center;">{{spaceId}}</h4>
+            <small><a href="{{pathFor 'addFeed' sid=spaceId}}">发布新Feed</a></small>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hw-wg-list row">
+            {{#each list}}
+
+                {{> wxSpaceListItem}}
+
+            {{/each}}
+        </div>
+    </div>
+
+
+</template>
+
+<template name="wxSpaceListItem">
+
+    <div class="col col-md-4 js_box" style="padding: 0;">
+        <a href="" class="hw-sp-item js_link">
+
+            <p class="c_tlt">{{title}}</p>
+
+
+        </a>
+
+    </div>
+
+</template>

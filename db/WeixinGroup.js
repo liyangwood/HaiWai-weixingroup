@@ -66,6 +66,10 @@ WeixinGroup.attachSchema(new SimpleSchema({
     memberCount : {
         type : String,
         optional : true
+    },
+
+    wxSpaceId : {
+        type : String
     }
 
 
@@ -114,6 +118,7 @@ _.extend(WeixinGroup, {
 
         data.createTime = Date.now();
         data.updateTime = data.createTime;
+        data.wxSpaceId = Meteor.uuid();
         WeixinGroup.insert(data, function(err, uuid){
 
             callback(err, uuid);
@@ -124,5 +129,12 @@ _.extend(WeixinGroup, {
 });
 
 
-
+if(Meteor.isServer){
+    if(WeixinGroup.find().count() < 1){
+        //WeixinGroup.addTestData();
+    }
+    Meteor.publish('WeixinGroup', function() {
+        return WeixinGroup.find();
+    });
+}
 

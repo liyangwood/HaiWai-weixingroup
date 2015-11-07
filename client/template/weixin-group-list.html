@@ -29,22 +29,23 @@
 <template name="weixinGroupListItem">
 
     <div class="col col-md-4 js_box" style="padding: 0;">
-        <a href="{{pathFor 'wgItem' gid=_id}}" class="hw-wg-item js_link">
+        <div class="hw-wg-item">
 
-            <div class="hw-img">
+            <a href="{{pathFor 'wxSpaceList' sid=wxSpaceId}}" class="hw-img">
                 <img src="{{this.image}}" />
-                <label>{{this.name}}</label>
-            </div>
+                <label>群空间</label>
+            </a>
 
-            <div class="right">
+            <a class="right" href="{{pathFor 'wgItem' gid=_id}}">
                 <em class=""></em>
 
+                <p>{{name}}</p>
                 <p class="hw-desc">{{this.description}}</p>
                 <p class="hw-time">{{formatDate this.createTime}}</p>
-            </div>
+            </a>
 
 
-        </a>
+        </div>
 
     </div>
 
