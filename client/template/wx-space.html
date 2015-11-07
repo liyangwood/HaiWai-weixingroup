@@ -1,15 +1,12 @@
 <template name="wxSpaceList">
 
 
-    <div class="container">
-        <div class="page-header hw-pager-header">
-            <h4 style="text-align: center;">{{spaceId}}</h4>
-            <small><a href="{{pathFor 'addFeed' sid=spaceId}}">发布新Feed</a></small>
-        </div>
-    </div>
+    {{#with space}}
+        {{> wxSpaceNameBlock }}
+    {{/with}}
 
-    <div class="container">
-        <div class="hw-wg-list row">
+    <div class="hw-full-container">
+        <div class="hw-sp-list row">
             {{#each list}}
 
                 {{> wxSpaceListItem}}
@@ -21,16 +18,40 @@
 
 </template>
 
-<template name="wxSpaceListItem">
+<template name="wxSpaceNameBlock">
+    <div class="hw-full-container hw-sp-card">
+        <img src="{{image}}" />
+        <p class="c1">{{name}}</p>
+        <p class="c2">{{category}}</p>
+        <p class="c3">{{description}}</p>
 
-    <div class="col col-md-4 js_box" style="padding: 0;">
-        <a href="" class="hw-sp-item js_link">
-
-            <p class="c_tlt">{{title}}</p>
-
-
-        </a>
-
+        <a class="c_new" href="{{pathFor 'addFeed' sid=wxSpaceId}}">发布新Feed</a>
     </div>
 
+</template>
+
+<template name="wxSpaceListItem">
+
+    <a class="col col-md-6 js_box hw-sp-item">
+
+        <p class="c_tlt">{{title}}</p>
+        <p class="c_msg">{{content}}</p>
+
+        {{#if images}}
+        {{> wxSpaceListImageView}}
+        {{/if}}
+
+        <span class="c_time">{{formatDate createTime}}</span>
+    </a>
+
+</template>
+
+<template name="wxSpaceListImageView">
+    <div class="row c_imgbox">
+        {{#each list}}
+        <div class="col col-xs-4">
+            <img src="{{.}}" />
+        </div>
+        {{/each}}
+    </div>
 </template>

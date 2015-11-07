@@ -1,4 +1,8 @@
 
+Meteor.subscribe('DB.Feed');
+Meteor.subscribe('WeixinGroup');
+
+
 Template.wxSpaceList.helpers({
     list : function(){
         var sort = {
@@ -20,6 +24,19 @@ Template.wxSpaceList.helpers({
 
     spaceId : function(){
         return Session.get('routeParams')[0];
+    },
+    space : function(){
+        var sid = Session.get('routeParams')[0];
+
+        return WeixinGroup.findOne({wxSpaceId:sid});
     }
 });
 
+Template.wxSpaceListImageView.list = function(){
+    var list = this.images;
+    if(list.length > 3){
+        list = list.slice(0, 3);
+    }
+
+    return list;
+};
