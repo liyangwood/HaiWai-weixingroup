@@ -300,3 +300,13 @@ body {
   color: #ffffff;
   font-size: 14px;
 }
+.hw-article {
+  padding-bottom: 50px;
+  font-size: 14px;
+  color: #989898;
+}
+.hw-article img {
+  max-width: 100%;
+  margin-top: 10px;
+  display: block;
+}

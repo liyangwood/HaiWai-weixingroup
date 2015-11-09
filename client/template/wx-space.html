@@ -60,22 +60,25 @@
 <template name="wxSpaceItemDetail">
 
     <div class="container">
-        <div class="page-header hw-pager-header">
-            <h4 style="text-align: center;">{{feed.title}}</h4>
+        <div style="padding-bottom: 5px;" class="page-header hw-pager-header">
+            <h4 style="font-size: 24px;font-weight: 400;">{{feed.title}}</h4>
 
             {{#with feed.group}}
-            {{name}}
+            <small>来自 {{name}}</small>
+            <small style="float: right;">{{formatDate feed.createTime}}</small>
             {{/with}}
 
-            <div>
-                {{feed.content}}
 
-                {{#each feed.images}}
+        </div>
+
+        <div class="hw-article">
+            {{feed.content}}
+
+            {{#each feed.images}}
 
                 <img src="{{.}}" />
 
-                {{/each}}
-            </div>
+            {{/each}}
         </div>
     </div>
 
