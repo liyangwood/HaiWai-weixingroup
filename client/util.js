@@ -5,7 +5,7 @@ var util = {};
 _.extend(util, _);
 
 util.ajax = function(opts){
-    util.extend({
+    opts = util.extend({
         url : '',
         type : 'get',
         dataType : 'json',

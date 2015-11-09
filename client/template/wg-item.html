@@ -21,10 +21,25 @@
             <label>添加时间 ：{{formatDate createTime}}</label>
 
 
-            {{#if qrCode}}
-                <div class="c_qr"><img src="{{qrCode}}"></div>
-            {{/if}}
+            <!--{{#if qrCode}}-->
+                <!--<div class="c_qr"><img src="{{qrCode}}"></div>-->
+            <!--{{/if}}-->
+
+
+            <div class="page-header hw-pager-header" style="margin-top: 25px;">
+                <small style="text-align: left; font-size: 14px;">想要加入该群？请留下您的微信账号，群主会联系您。</small>
+
+                <div class="input-group" style="margin-top: 10px;">
+                    <input type="text" class="form-control js_wx" placeholder="请输入微信账号">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success js_addbtn" type="button">确认</button>
+                        </span>
+                </div><!-- /input-group -->
+
+            </div>
+
         </div>
+
 
 
     </div>

@@ -38,7 +38,7 @@ DB.Feed.Schema = new SimpleSchema({
 
     content : {
         type : String,
-        label : 'feed征文，可以是html结构'
+        label : 'feed正文，可以是html结构'
     }
 });
 
