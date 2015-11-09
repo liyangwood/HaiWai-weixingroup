@@ -130,7 +130,7 @@ body {
 .hw-wg-item .right .hw-desc {
   margin-top: 5px;
   font-size: 14px;
-  color: #454545;
+  color: #989898;
   display: inline-block;
   height: 40px;
   overflow: hidden;
@@ -142,6 +142,10 @@ body {
   position: absolute;
   bottom: 2px;
   right: 10px;
+}
+.hw-wg-item .right .hw-name {
+  color: #454545;
+  font-size: 16px;
 }
 .hw-wg-navbar {
   height: 40px;
