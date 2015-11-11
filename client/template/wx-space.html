@@ -5,7 +5,7 @@
         {{> wxSpaceNameBlock }}
     {{/with}}
 
-    <div class="hw-full-container">
+    <div class="container hw-container">
         <div class="hw-sp-list row">
             {{#each list}}
 
@@ -20,19 +20,22 @@
 
 <template name="wxSpaceNameBlock">
     <div class="hw-full-container hw-sp-card">
-        <img src="{{image}}" />
-        <p class="c1">{{name}}</p>
-        <p class="c2">{{category}}</p>
-        <p class="c3">{{description}}</p>
+        <div class="container box">
+            <img src="{{image}}" />
+            <p class="c1">{{name}}</p>
+            <p class="c2">{{category}}</p>
+            <p class="c3">{{description}}</p>
 
-        <a class="c_new" href="{{pathFor 'addFeed' sid=wxSpaceId}}">发布新Feed</a>
+            <a class="c_new" href="{{pathFor 'addFeed' sid=wxSpaceId}}">发布新Feed</a>
+        </div>
+
     </div>
 
 </template>
 
 <template name="wxSpaceListItem">
 
-    <a href="{{pathFor 'wxSpaceItemDetail' feedId=_id}}" class="col col-md-6 js_box hw-sp-item">
+    <a href="{{pathFor 'wxSpaceItemDetail' feedId=_id}}" class="col col-md-12 js_box hw-sp-item">
 
         <p class="c_tlt">{{title}}</p>
         <p class="c_msg">{{content}}</p>

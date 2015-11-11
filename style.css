@@ -5,6 +5,14 @@ a:focus {
 .hw-full-container .navbar-brand {
   padding: 5px;
 }
+.hw-container {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .hw-container {
+    padding: 0 15px;
+  }
+}
 .hw-blue-button {
   background: #39b8eb;
   color: #fff;
@@ -273,6 +281,8 @@ body {
 }
 .hw-sp-card {
   background: #39b8eb;
+}
+.hw-sp-card .box {
   padding: 10px 15px;
   position: relative;
   padding-left: 85px;
