@@ -1,4 +1,6 @@
 
+
+
 var F = {
     sendJson : function(status, data, statusText){
         var rs = {
@@ -31,6 +33,50 @@ var F = {
         }
 
         return rs;
+    },
+
+
+    loginInWeixin : function(code, callback){
+        var request = Meteor.npmRequire('request');
+
+        var url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='+Const.WEIXINAPPID+'&secret='+Const.WEIXINAPPSECRET+'&code='+code+'&grant_type=authorization_code';
+
+        request({
+            url : url
+        }, function(err, res, body){
+            //callback(err, JSON.parse(body));
+
+            var json = JSON.parse(body);
+            console.log(json);
+
+            // get user info
+            url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+json.access_token+'&openid='+json.unionid||json.openid;
+            request({url : url}, function(err, res, body){
+                var rs = JSON.parse(body);
+                console.log(rs);
+
+
+                //set to db
+                var data = {
+                    access_token : json.access_token,
+                    refresh_token : json.refresh_token,
+                    nickname : rs.nickname,
+                    image : rs.headimgurl,
+                    unionid : rs.unionid,
+                    openid : rs.openid
+                };
+
+
+
+                DB.User.insertData(data, function(error, uid){
+                    callback(error, data);
+                });
+
+
+
+            });
+        });
+
     }
 };
 
@@ -56,4 +102,31 @@ Router.route('/api/wg/add', {
     })
 });
 
+//这个专门用来供微信扫码以后回调使用
+Router.route('/weixinlogin', {
+    where : 'server'
+}).get(function(){
+    var query = F.getParams.call(this, 'get');
 
+    var code = query.code,
+        state = query.state;
+    var self = this;
+
+    if(state === Const.VERIFYSTATE){
+
+        F.loginInWeixin(code, function(err, json){
+            if(err){
+
+                //console.log(self.response);
+                self.response.end(F.sendJson(-1, err.toString()));
+                return;
+            }
+            self.response.end(F.sendJson(1, json));
+
+
+        });
+    }
+    else{
+        this.response.end(F.sendJson(-1, '状态验证错误'));
+    }
+});

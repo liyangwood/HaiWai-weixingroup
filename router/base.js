@@ -11,8 +11,10 @@ Router.configure({
     }
 });
 Router.route('/', {
-    name: 'weixin-group-list'
+    name: 'weixin-group-list',
+    data : function(){
 
+    }
 });
 
 Router.route('/add-weixin-group', {

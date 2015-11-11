@@ -78,6 +78,17 @@ util.message = {
     }
 };
 
+util.showModal = function(opts, elem){
+    elem = elem?$(elem):$('#js_modal');
+
+    opts = util.extend({
+        backdrop : 'static'
+    }, opts||{});
+
+    //use bootstrap modal
+    $(elem).modal(opts);
+    return $(elem).find('.js_content');
+};
 
 
 
