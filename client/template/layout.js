@@ -1,4 +1,4 @@
-
+Meteor.subscribe('DB.User');
 
 Template.layout.events({
     'click .js_weixinLogin' : function(e){
@@ -36,7 +36,13 @@ Template.layout.onCreated(function(){
                 state : query.state
             },
             success : function(rs){
-                console.log(rs)
+                console.log(rs.data);
+                if(rs.status < 0){
+                    alert(rs.data);
+                    return;
+                }
+
+                location.href = '/';
             }
         });
     }

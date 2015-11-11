@@ -66,8 +66,7 @@ var F = {
                     openid : rs.openid
                 };
 
-
-
+console.log(data);
                 DB.User.insertData(data, function(error, uid){
                     callback(error, data);
                 });
