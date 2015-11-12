@@ -66,7 +66,7 @@ var F = {
         url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+json.access_token+'&openid='+json.unionid||json.openid;
         request({url : url}, function(err, res, body){
             var rs = JSON.parse(body);
-
+            console.log(rs);
 
             //set to db
             var data = {
