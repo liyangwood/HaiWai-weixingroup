@@ -58,7 +58,7 @@ Template.layout.onCreated(function(){
                 Cookie.set('uid', json.uid);
 
 
-                location.reload();
+                location.href = '/';
             }
         });
     }
