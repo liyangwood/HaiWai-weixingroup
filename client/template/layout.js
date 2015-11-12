@@ -24,6 +24,12 @@ Template.layout.events({
     }
 });
 
+Template.layout.helpers({
+    user : function(){
+        return Session.get('user');
+    }
+});
+
 Template.layout.onCreated(function(){
     var query = Router.current().params.query;
 
@@ -42,7 +48,14 @@ Template.layout.onCreated(function(){
                     return;
                 }
 
-                location.href = '/';
+                var json = rs.data;
+
+                Cookie.set('token', json.access_token);
+                Cookie.set('refreshtoken', json.refresh_token);
+                Cookie.set('uid', json.uid);
+
+
+                Router.go('/');
             }
         });
     }

@@ -21,8 +21,12 @@
                         <li><a href="/">首页</a></li>
                         <li><a href="{{pathFor 'addWeixinGroup'}}">添加微信群</a></li>
 
+                        {{#if user.isLogin}}
+                            <li><a href="javascript:void(0)" class="js_weixinLogin">{{user.nickname}}</a></li>
+                        {{else}}
 
-                        <li><a href="javascript:void(0)" class="js_weixinLogin">微信登录</a></li>
+                            <li><a href="javascript:void(0)" class="js_weixinLogin">微信登录</a></li>
+                        {{/if}}
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
@@ -40,7 +44,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">信息提示</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding: 0;">
                     <p style="text-align:center;" class="js_content"></p>
                 </div>
                 <div class="modal-footer">

@@ -1,5 +1,7 @@
+if(Meteor.isServer){
 
 
+var request = Meteor.npmRequire('request');
 
 var F = {
     sendJson : function(status, data, statusText){
@@ -37,7 +39,7 @@ var F = {
 
 
     loginInWeixin : function(code, callback){
-        var request = Meteor.npmRequire('request');
+
 
         var url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='+Const.WEIXINAPPID+'&secret='+Const.WEIXINAPPSECRET+'&code='+code+'&grant_type=authorization_code';
 
@@ -49,33 +51,45 @@ var F = {
             var json = JSON.parse(body);
             console.log(json);
 
-            // get user info
-            url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+json.access_token+'&openid='+json.unionid||json.openid;
-            request({url : url}, function(err, res, body){
-                var rs = JSON.parse(body);
-                console.log(rs);
-
-
-                //set to db
-                var data = {
-                    access_token : json.access_token,
-                    refresh_token : json.refresh_token,
-                    nickname : rs.nickname,
-                    image : rs.headimgurl,
-                    unionid : rs.unionid,
-                    openid : rs.openid
+            if(false && json.errmsg){
+                callback(json.errmsg, null);
+            }
+            else{
+                json = {
+                    nickname : 'aaaa',
+                    image : 'bb'
                 };
+                F.getWeixinUserInfo(json, callback);
+            }
 
-console.log(data);
-                DB.User.insertData(data, function(error, uid){
-                    callback(error, data);
-                });
-
-
-
-            });
         });
 
+    },
+    getWeixinUserInfo : function(json, callback){
+        url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+json.access_token+'&openid='+json.unionid||json.openid;
+        request({url : url}, function(err, res, body){
+            var rs = JSON.parse(body);
+
+
+            //set to db
+            var data = {
+                access_token : json.access_token,
+                refresh_token : json.refresh_token,
+                nickname : rs.nickname,
+                image : rs.headimgurl,
+                unionid : rs.unionid,
+                openid : rs.openid
+            };
+
+            console.log(data);
+            callback(err, data);
+            //DB.User.insertData(data, function(error, uid){
+            //    callback(error, data);
+            //});
+
+
+
+        });
     }
 };
 
@@ -120,7 +134,17 @@ Router.route('/weixinlogin', {
                 self.response.end(F.sendJson(-1, err.toString()));
                 return;
             }
-            self.response.end(F.sendJson(1, json));
+
+            DB.User.insertData(json, Meteor.bindEnvironment(function(uid){
+
+                self.response.end(F.sendJson(1, json));
+
+            }, function(err){
+
+            }));
+
+
+
 
 
         });
@@ -129,3 +153,6 @@ Router.route('/weixinlogin', {
         this.response.end(F.sendJson(-1, '状态验证错误'));
     }
 });
+
+
+}

@@ -56,3 +56,20 @@ Router.route('/:sid/feed/add', {
 Router.route('/space/feed/:feedId', {
     name : 'wxSpaceItemDetail'
 });
+
+Router.onBeforeAction(function(){
+
+
+    if(Meteor.isClient && !Session.get('user')){
+
+        var token = Cookie.get('token');
+        var user = {
+            isLogin : true,
+            nickname : 'aaaa'
+        };
+        console.log(user);
+        //Session.set('user', user);
+    }
+
+    this.next();
+});

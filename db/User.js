@@ -1,8 +1,8 @@
 
 //use meteor Users
-DB.User = new Mongo.Collection('User');
+//DB.User = new Mongo.Collection('User');
 
-DB.User.attachSchema(new SimpleSchema({
+Meteor.users.attachSchema(new SimpleSchema({
     nickname : {
         type : String
     },
@@ -34,25 +34,25 @@ DB.User.attachSchema(new SimpleSchema({
     }
 }));
 
-DB.User.allow({
+Meteor.users.allow({
     insert : function(uid){
         return true;
     }
 });
 
-DB.User.insertData = function(data, callback){
-    data.createTime = Date.now();
+DB.User = {};
+_.extend(DB.User, {
+    insertData : function(data, callback){
+        data.createTime = Date.now();
 
-    DB.User.insert(data, function(err, uid){
-        callback(err, uid);
-    });
+        Meteor.wrapAsync(function(){
+            Meteor.users.insert(data, function(err, uid){
+                callback(err, uid);
+            });
+        }).call();
+
+    }
+});
 
 
-};
 
-// run on server
-if(Meteor.isServer){
-    Meteor.publish('DB.User', function(){
-        return DB.User.find();
-    });
-}

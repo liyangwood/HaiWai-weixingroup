@@ -1,3 +1,5 @@
 {
-
+  "chuangbo:meteor-cookie":{
+    "git" : "https://github.com/chuangbo/meteor-cookie.git"
+  }
 }
