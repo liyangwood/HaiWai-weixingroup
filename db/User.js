@@ -55,7 +55,7 @@ _.extend(DB.User, {
             Meteor.users.update(query, {
                 '$set' : data
             }, function(err, uid){
-                callback(err, uid);
+                callback(err, tmp._id);
             });
 
             return;
