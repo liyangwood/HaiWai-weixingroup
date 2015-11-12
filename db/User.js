@@ -45,14 +45,31 @@ _.extend(DB.User, {
     insertData : function(data, callback){
         data.createTime = Date.now();
 
-        Meteor.wrapAsync(function(){
-            Meteor.users.insert(data, function(err, uid){
+        var query = {
+            unionid : data.unionid
+        };
+
+        var tmp = Meteor.users.findOne(query);
+        if(tmp){
+            console.log(tmp);
+            Meteor.users.update(query, data, function(err, uid){
                 callback(err, uid);
             });
-        }).call();
+
+            return;
+        }
+
+
+        Meteor.users.insert(data, function(err, uid){
+            callback(err, uid);
+        });
 
     }
 });
 
-
+if(Meteor.isServer){
+    Meteor.publish('DB.User', function(){
+        return Meteor.users.find();
+    });
+}
 

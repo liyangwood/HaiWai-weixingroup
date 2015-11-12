@@ -62,13 +62,15 @@ Router.onBeforeAction(function(){
 
     if(Meteor.isClient && !Session.get('user')){
 
-        var token = Cookie.get('token');
-        var user = {
-            isLogin : true,
-            nickname : 'aaaa'
-        };
+        Meteor.subscribe('DB.User');
+
+        var uid = Cookie.get('uid');
+        var user = Meteor.users.findOne({_id:uid});
         console.log(user);
-        //Session.set('user', user);
+        if(user){
+            Session.set('user', user);
+        }
+
     }
 
     this.next();

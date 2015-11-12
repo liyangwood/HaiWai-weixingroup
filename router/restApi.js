@@ -51,14 +51,11 @@ var F = {
             var json = JSON.parse(body);
             console.log(json);
 
-            if(false && json.errmsg){
+            if(json.errmsg){
                 callback(json.errmsg, null);
             }
             else{
-                json = {
-                    nickname : 'aaaa',
-                    image : 'bb'
-                };
+
                 F.getWeixinUserInfo(json, callback);
             }
 
@@ -127,27 +124,29 @@ Router.route('/weixinlogin', {
 
     if(state === Const.VERIFYSTATE){
 
-        F.loginInWeixin(code, function(err, json){
-            if(err){
+        var fn = Meteor.wrapAsync(F.loginInWeixin);
 
+        fn(code, function(err, json){
+            if(err){
                 //console.log(self.response);
                 self.response.end(F.sendJson(-1, err.toString()));
                 return;
             }
 
-            DB.User.insertData(json, Meteor.bindEnvironment(function(uid){
+            DB.User.insertData(json, function(error, uid){
 
+                if(error){
+                    self.response.end(F.sendJson(-1, error.toString()));
+                    return;
+                }
+
+                json.uid = uid;
                 self.response.end(F.sendJson(1, json));
 
-            }, function(err){
-
-            }));
-
-
-
-
-
+            });
         });
+
+
     }
     else{
         this.response.end(F.sendJson(-1, '状态验证错误'));

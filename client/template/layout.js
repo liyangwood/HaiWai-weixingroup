@@ -26,7 +26,12 @@ Template.layout.events({
 
 Template.layout.helpers({
     user : function(){
-        return Session.get('user');
+        var user = Session.get('user');
+        if(user && user.nickname){
+            user.isLogin = true;
+        }
+
+        return user;
     }
 });
 
@@ -50,8 +55,6 @@ Template.layout.onCreated(function(){
 
                 var json = rs.data;
 
-                Cookie.set('token', json.access_token);
-                Cookie.set('refreshtoken', json.refresh_token);
                 Cookie.set('uid', json.uid);
 
 
