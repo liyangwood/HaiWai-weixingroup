@@ -52,7 +52,9 @@ _.extend(DB.User, {
         var tmp = Meteor.users.findOne(query);
         if(tmp){
             console.log(tmp);
-            Meteor.users.update(query, data, function(err, uid){
+            Meteor.users.update(query, {
+                '$set' : data
+            }, function(err, uid){
                 callback(err, uid);
             });
 
