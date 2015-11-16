@@ -44,7 +44,8 @@ WeixinGroup.attachSchema(new SimpleSchema({
     },
     qrCode : {
         type : String,
-        label : '群二维码'
+        label : '群二维码',
+        optional : true
     },
     tag : {
         type : String,

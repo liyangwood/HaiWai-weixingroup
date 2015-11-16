@@ -22,10 +22,10 @@
                         <li><a href="{{pathFor 'addWeixinGroup'}}">添加微信群</a></li>
 
                         {{#if user.isLogin}}
-                            <li><a href="javascript:void(0)">{{user.nickname}}</a></li>
+                            <li><a href="javascript:void(0)" class="js_logout">注销 {{user.nickname}}</a></li>
                         {{else}}
 
-                            <li><a href="#" class="js_weixinLogin">微信登录</a></li>
+                            <li><a href="" class="js_weixinLogin">微信登录</a></li>
                         {{/if}}
                     </ul>
 

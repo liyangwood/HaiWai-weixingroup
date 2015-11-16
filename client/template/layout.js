@@ -21,6 +21,11 @@ Template.layout.events({
         });
 
 
+    },
+
+    'click .js_logout' : function(){
+        Cookie.remove('uid');
+        location.reload();
     }
 });
 
@@ -62,4 +67,11 @@ Template.layout.onCreated(function(){
             }
         });
     }
+
+    util.message.register('main-login', function(){
+        var user = Session.get('user');
+        if(!user || !user.isLogin){
+            $('.js_weixinLogin').trigger('click');
+        }
+    });
 });

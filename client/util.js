@@ -90,7 +90,18 @@ util.showModal = function(opts, elem){
     return $(elem).find('.js_content');
 };
 
+util.user = {
+    get : function(key){
+        var rs = Session.get('user');
+        return rs || null;
+    },
+    isLogin : function(){
+        var user = util.user.get();
+        if(!user) return false;
 
+        return user.isLogin;
+    }
+};
 
 
 

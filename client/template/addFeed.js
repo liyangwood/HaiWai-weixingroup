@@ -19,6 +19,13 @@ Template.addFeed.events({
     },
 
     'click .js_btn1' : function(e){
+        if(!util.user.isLogin()){
+            util.message.publish('main-login');
+
+            return;
+        }
+
+
         var elem = $('.js_form');
 
         var title = util.findRole(elem, 'title').val(),
