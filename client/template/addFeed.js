@@ -82,12 +82,17 @@ var F = {
                 var editor = ev.editor;
                 var overridecmd = new CKEDITOR.command(editor, {
                     exec: function(editor){
+
                         $('[role="upload_image"]').trigger('click');
                     }
                 });
 
                 // Replace the old save's exec function with the new one
                 ev.editor.commands.image.exec = overridecmd.exec;
+                ev.editor.commands.image.on('click', function(e){
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
             });
 
             F.ck = CKEDITOR.appendTo('js_textarea', util.extend(Const.CKEditor.config, {
