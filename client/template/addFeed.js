@@ -21,17 +21,19 @@ Template.addFeed.events({
     },
 
     'click .js_btn1' : function(e){
-        if(!util.user.isLogin()){
-            util.message.publish('main-login');
-
-            return;
-        }
+        //if(!util.user.isLogin()){
+        //    util.message.publish('main-login');
+        //
+        //    return;
+        //}
 
 
         var elem = $('.js_form');
 
         var title = util.findRole(elem, 'title').val(),
-            content = util.findRole(elem, 'content').val();
+            content = F.ck.getData();
+
+
 
         var list = util.map(elem.find('.js_image_box').find('img'), function(o){
 
@@ -45,11 +47,16 @@ Template.addFeed.events({
         btn.button('loading');
         DB.Feed.insertData({
             title : title,
-            content : content,
+            content : encodeURIComponent(content),
             images : list,
             wxSpaceId : Router.current().params.sid
         }, function(err, rs){
             btn.button('reset');
+            if(err){
+                alert(err);
+                return;
+            }
+
             if(rs){
                 Router.go('wxSpaceList', {
                     sid : sid
@@ -69,7 +76,24 @@ var F = {
     loadCKEditor : function(){
 
         if(typeof CKEDITOR !== 'undefined'){
-            F.ck = CKEDITOR.appendTo('js_textarea', Const.CKEditor.config);
+
+            //覆盖image button
+            CKEDITOR.on('instanceReady', function (ev) {
+                var editor = ev.editor;
+                var overridecmd = new CKEDITOR.command(editor, {
+                    exec: function(editor){
+                        $('[role="upload_image"]').trigger('click');
+                    }
+                });
+
+                // Replace the old save's exec function with the new one
+                ev.editor.commands.image.exec = overridecmd.exec;
+            });
+
+            F.ck = CKEDITOR.appendTo('js_textarea', util.extend(Const.CKEditor.config, {
+
+            }));
+
         }
         else{
             util.delay(F.loadCKEditor, 200);

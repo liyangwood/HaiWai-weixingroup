@@ -39,13 +39,10 @@ a:focus {
   border-bottom: 1px dashed #39b8eb;
   padding: 0 0 20px 0;
 }
-#cke_editor1 {
+.cke {
   border-radius: 4px;
 }
-#cke_editor1 #cke_1_top {
-  display: none;
-}
-#cke_editor1 #cke_1_bottom {
+.cke .cke_path {
   display: none;
 }
 body {

@@ -21,7 +21,8 @@ DB.Feed.Schema = new SimpleSchema({
         optional : true
     },
     title : {
-        type : String
+        type : String,
+        label : '标题'
     },
     subTitle : {
         type : String,
@@ -38,7 +39,7 @@ DB.Feed.Schema = new SimpleSchema({
 
     content : {
         type : String,
-        label : 'feed正文，可以是html结构'
+        label : '正文'
     }
 });
 
@@ -55,6 +56,16 @@ _.extend(DB.Feed, {
 
         data.createTime = Date.now();
         data.updateTime = data.createTime;
+
+        var content = decodeURIComponent(data.content);
+
+        data.images = data.images || [];
+        var m,
+            rex = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
+
+        while (m = rex.exec(content)){
+            data.images.push(m[1]);
+        }
 
 
         DB.Feed.insert(data, function(err, uuid){
