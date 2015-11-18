@@ -38,7 +38,7 @@
     <a href="{{pathFor 'wxSpaceItemDetail' feedId=_id}}" class="col col-md-12 js_box hw-sp-item">
 
         <p class="c_tlt">{{title}}</p>
-        <p class="c_msg">{{content}}</p>
+        <p class="c_msg">{{{removeAllTag content}}}</p>
 
         {{#if images}}
         {{> wxSpaceListImageView}}
@@ -75,13 +75,13 @@
         </div>
 
         <div class="hw-article">
-            {{feed.content}}
+            {{{decode feed.content}}}
 
-            {{#each feed.images}}
+            <!--{{#each feed.images}}-->
 
-                <img src="{{.}}" />
+                <!--<img src="{{.}}" />-->
 
-            {{/each}}
+            <!--{{/each}}-->
         </div>
     </div>
 

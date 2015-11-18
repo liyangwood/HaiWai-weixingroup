@@ -7,21 +7,21 @@ body
 {
 	/* Font */
 	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
-	font-size: 12px;
+	font-size: 14px;
 
 	/* Text color */
-	color: #333;
+	color: #454545;
 
 	/* Remove the background color to make it transparent */
 	background-color: #fff;
 
-	margin: 20px;
+	margin: 10px;
 }
 
 .cke_editable
 {
-	font-size: 13px;
-	line-height: 1.6;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 blockquote
@@ -89,6 +89,11 @@ img.left
 	padding: 5px;
 }
 
+img{
+	max-width: 100%;
+	display: block;
+}
+
 pre
 {
 	white-space: pre-wrap; /* CSS 2.1 */
@@ -129,4 +134,8 @@ a > img {
 	margin: 1px;
 	border: none;
 	outline: 1px solid #0782C1;
+}
+
+p{
+	margin: 0 0 10px 0;
 }
