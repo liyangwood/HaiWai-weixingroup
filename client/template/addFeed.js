@@ -6,11 +6,11 @@ Template.addFeed.events({
 
             var btn = elem.find('.js_uploadbtn');
 
-            btn.button('loading');
+            //btn.button('loading');
             util.uploadImage(files[0], function(flag, url){
                 console.log(flag, url);
                 if(flag){
-                    btn.button('reset');
+                    //btn.button('reset');
                     var img_str = '<img src="'+url+'" />';
 
                     var img = CKEDITOR.dom.element.createFromHtml(img_str);
