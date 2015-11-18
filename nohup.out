@@ -10259,3 +10259,1161 @@ specify an alternative port with --port <port>.
 [34mI20151117-17:47:43.983(-8)? [39m    at accounts_server.js:1128:14
 [34mI20151117-17:47:43.983(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
 [34mI20151117-17:47:43.983(-8)? [39m    at packages/meteor/timers.js:6:1
+=> Server modified -- restarting...                                   [34mI20151117-17:55:18.679(-8)? [39mnamespace init
+[34mI20151117-17:55:18.687(-8)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151117-17:55:18.687(-8)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151117-17:55:18.687(-8)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151117-17:55:18.687(-8)? [39m** will still be sent to all clients.
+[34mI20151117-17:55:18.687(-8)? [39m**
+[34mI20151117-17:55:18.687(-8)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151117-17:55:18.687(-8)? [39m**
+[34mI20151117-17:55:18.688(-8)? [39m**   $ meteor remove autopublish
+[34mI20151117-17:55:18.688(-8)? [39m**
+[34mI20151117-17:55:18.688(-8)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151117-17:55:18.688(-8)? [39m** for each collection that you want clients to see.
+[34mI20151117-17:55:18.689(-8)? [39m
+=> Meteor server restarted
+[34mI20151117-18:05:18.764(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:05:18.765(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:05:18.765(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:05:18.765(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:05:18.766(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:05:18.766(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:05:18.766(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:05:18.767(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:05:18.767(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:05:18.767(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:05:18.767(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-18:15:18.769(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:15:18.769(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:15:18.769(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:15:18.769(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:15:18.769(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:15:18.770(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:15:18.770(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:15:18.770(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:15:18.770(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:15:18.770(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:15:18.772(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-18:25:18.773(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:25:18.774(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:25:18.774(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:25:18.775(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:25:18.775(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:25:18.775(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:25:18.775(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:25:18.775(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:25:18.776(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:25:18.776(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:25:18.776(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-18:35:18.779(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:35:18.779(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:35:18.779(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:35:18.779(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:35:18.780(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:35:18.781(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:35:18.781(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:35:18.781(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:35:18.781(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:35:18.781(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:35:18.781(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-18:45:18.783(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:45:18.784(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:45:18.784(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:45:18.784(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:45:18.784(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:45:18.784(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:45:18.785(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:45:18.785(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:45:18.785(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:45:18.786(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:45:18.786(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-18:55:18.786(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-18:55:18.787(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-18:55:18.787(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-18:55:18.788(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-18:55:18.788(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-18:55:18.788(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-18:55:18.788(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-18:55:18.788(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-18:55:18.789(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-18:55:18.789(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-18:55:18.789(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:05:18.790(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:05:18.790(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:05:18.790(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:05:18.791(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:05:18.791(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:05:18.791(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:05:18.791(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:05:18.791(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:05:18.792(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:05:18.792(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:05:18.792(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:15:18.794(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:15:18.795(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:15:18.795(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:15:18.796(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:15:18.796(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:15:18.796(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:15:18.796(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:15:18.796(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:15:18.797(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:15:18.797(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:15:18.797(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:25:18.798(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:25:18.798(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:25:18.799(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:25:18.799(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:25:18.799(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:25:18.799(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:25:18.800(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:25:18.800(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:25:18.800(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:25:18.800(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:25:18.800(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:35:18.802(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:35:18.803(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:35:18.803(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:35:18.803(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:35:18.804(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:35:18.804(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:35:18.804(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:35:18.804(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:35:18.804(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:35:18.805(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:35:18.805(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:45:18.805(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:45:18.806(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:45:18.806(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:45:18.807(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:45:18.807(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:45:18.807(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:45:18.807(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:45:18.807(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:45:18.808(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:45:18.808(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:45:18.808(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-19:55:18.809(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-19:55:18.810(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-19:55:18.810(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-19:55:18.811(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-19:55:18.811(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-19:55:18.811(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-19:55:18.811(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-19:55:18.811(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-19:55:18.812(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-19:55:18.812(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-19:55:18.812(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:05:18.813(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:05:18.814(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:05:18.815(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:05:18.815(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:05:18.815(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:05:18.815(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:05:18.815(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:05:18.816(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:05:18.816(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:05:18.816(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:05:18.816(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:15:18.818(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:15:18.818(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:15:18.818(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:15:18.819(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:15:18.819(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:15:18.819(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:15:18.819(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:15:18.820(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:15:18.820(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:15:18.820(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:15:18.820(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:25:18.821(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:25:18.822(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:25:18.822(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:25:18.822(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:25:18.822(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:25:18.822(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:25:18.822(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:25:18.823(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:25:18.823(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:25:18.823(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:25:18.824(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:35:18.824(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:35:18.825(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:35:18.825(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:35:18.825(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:35:18.825(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:35:18.825(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:35:18.826(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:35:18.826(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:35:18.826(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:35:18.826(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:35:18.826(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:45:18.828(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:45:18.829(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:45:18.829(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:45:18.829(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:45:18.829(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:45:18.830(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:45:18.830(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:45:18.830(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:45:18.830(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:45:18.830(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:45:18.830(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-20:55:18.846(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-20:55:18.846(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-20:55:18.846(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-20:55:18.846(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-20:55:18.847(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-20:55:18.847(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-20:55:18.847(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-20:55:18.847(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-20:55:18.847(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-20:55:18.848(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-20:55:18.848(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:05:18.849(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:05:18.850(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:05:18.850(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:05:18.850(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:05:18.850(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:05:18.851(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:05:18.851(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:05:18.851(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:05:18.851(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:05:18.851(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:05:18.851(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:15:18.852(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:15:18.852(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:15:18.853(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:15:18.853(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:15:18.854(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:15:18.854(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:25:18.855(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:25:18.856(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:25:18.856(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:25:18.856(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:25:18.856(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:25:18.856(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:25:18.856(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:25:18.857(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:25:18.857(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:25:18.857(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:25:18.857(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:35:18.858(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:35:18.859(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:35:18.859(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:35:18.859(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:35:18.859(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:35:18.860(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:35:18.860(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:35:18.860(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:35:18.860(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:35:18.860(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:35:18.860(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:45:18.862(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:45:18.863(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:45:18.863(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:45:18.863(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:45:18.863(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:45:18.863(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:45:18.863(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:45:18.864(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:45:18.864(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:45:18.864(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:45:18.864(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-21:55:18.868(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-21:55:18.869(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-21:55:18.869(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-21:55:18.869(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-21:55:18.870(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-21:55:18.870(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-21:55:18.870(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-21:55:18.870(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-21:55:18.870(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-21:55:18.870(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-21:55:18.870(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:05:18.871(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:05:18.872(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:05:18.872(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:05:18.873(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:05:18.873(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:05:18.873(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:15:18.875(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:15:18.876(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:15:18.876(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:15:18.877(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:15:18.877(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:15:18.877(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:25:18.879(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:25:18.879(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:25:18.879(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:25:18.880(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:25:18.880(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:25:18.880(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:35:18.883(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:35:18.884(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:35:18.884(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:35:18.884(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:35:18.885(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:35:18.885(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:45:18.890(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:45:18.891(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:45:18.891(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:45:18.891(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:45:18.891(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:45:18.891(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:45:18.892(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:45:18.892(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:45:18.892(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:45:18.892(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:45:18.892(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-22:55:18.895(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-22:55:18.896(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-22:55:18.896(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-22:55:18.896(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-22:55:18.897(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-22:55:18.897(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-22:55:18.897(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-22:55:18.897(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-22:55:18.897(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-22:55:18.898(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-22:55:18.898(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:05:18.899(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:05:18.900(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:05:18.900(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:05:18.900(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:05:18.900(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:05:18.900(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:05:18.901(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:05:18.901(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:05:18.901(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:05:18.901(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:05:18.901(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:15:18.902(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:15:18.903(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:15:18.903(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:15:18.903(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:15:18.903(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:15:18.903(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:15:18.903(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:15:18.904(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:15:18.904(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:15:18.904(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:15:18.904(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:25:18.906(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:25:18.907(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:25:18.907(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:25:18.908(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:25:18.908(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:25:18.908(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:35:18.909(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:35:18.910(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:35:18.910(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:35:18.910(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:35:18.910(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:35:18.911(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:35:18.911(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:35:18.911(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:35:18.911(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:35:18.911(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:35:18.911(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:45:18.913(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:45:18.913(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:45:18.914(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:45:18.914(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:45:18.914(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:45:18.914(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:45:18.915(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:45:18.915(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:45:18.915(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:45:18.915(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:45:18.915(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151117-23:55:18.917(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151117-23:55:18.918(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151117-23:55:18.918(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151117-23:55:18.918(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151117-23:55:18.918(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151117-23:55:18.919(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151117-23:55:18.919(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151117-23:55:18.919(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151117-23:55:18.919(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151117-23:55:18.919(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151117-23:55:18.919(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:05:18.921(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:05:18.922(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:05:18.922(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:05:18.923(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:05:18.923(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:05:18.923(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:15:18.924(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:15:18.925(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:15:18.925(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:15:18.925(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:15:18.925(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:15:18.926(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:15:18.926(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:15:18.926(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:15:18.926(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:15:18.926(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:15:18.926(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:25:18.928(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:25:18.929(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:25:18.929(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:25:18.930(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:25:18.930(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:25:18.930(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:35:18.933(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:35:18.934(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:35:18.934(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:35:18.935(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:35:18.935(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:35:18.935(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:45:18.937(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:45:18.938(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:45:18.938(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:45:18.938(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:45:18.938(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:45:18.939(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:45:18.939(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:45:18.939(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:45:18.939(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:45:18.939(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:45:18.939(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-00:55:18.941(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-00:55:18.941(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-00:55:18.942(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-00:55:18.942(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-00:55:18.942(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-00:55:18.943(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:05:18.945(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:05:18.946(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:05:18.946(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:05:18.946(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:05:18.946(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:05:18.947(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:05:18.947(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:05:18.947(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:05:18.947(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:05:18.947(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:05:18.947(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:15:18.969(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:15:18.970(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:15:18.970(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:15:18.971(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:15:18.971(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:15:18.971(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:25:18.974(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:25:18.975(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:25:18.975(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:25:18.975(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:25:18.975(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:25:18.975(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:25:18.976(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:25:18.976(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:25:18.976(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:25:18.976(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:25:18.976(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:35:18.977(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:35:18.978(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:35:18.978(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:35:18.979(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:35:18.979(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:35:18.979(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:35:18.979(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:35:18.979(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:35:18.979(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:35:18.979(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:35:18.980(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:45:18.981(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:45:18.982(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:45:18.982(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:45:18.983(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:45:18.983(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:45:18.983(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:45:18.983(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:45:18.983(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:45:18.983(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:45:18.983(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:45:18.984(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-01:55:18.985(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-01:55:18.985(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-01:55:18.985(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-01:55:18.986(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-01:55:18.986(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-01:55:18.986(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-01:55:18.986(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-01:55:18.986(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-01:55:18.986(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-01:55:18.986(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-01:55:18.987(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:05:18.986(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:05:18.987(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:05:18.987(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:05:18.987(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:05:18.987(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:05:18.987(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:05:18.988(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:05:18.988(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:05:18.988(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:05:18.988(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:05:18.988(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:15:18.989(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:15:18.990(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:15:18.990(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:15:18.990(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:15:18.991(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:15:18.991(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:15:18.991(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:15:18.991(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:15:18.991(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:15:18.991(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:15:18.991(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:25:19.010(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:25:19.010(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:25:19.010(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:25:19.011(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:25:19.011(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:25:19.011(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:35:19.014(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:35:19.015(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:35:19.015(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:35:19.016(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:35:19.016(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:35:19.016(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:45:19.018(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:45:19.018(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:45:19.018(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:45:19.018(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:45:19.019(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:45:19.019(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:45:19.019(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:45:19.019(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:45:19.019(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:45:19.019(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:45:19.019(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-02:55:19.021(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-02:55:19.022(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-02:55:19.022(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-02:55:19.022(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-02:55:19.022(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-02:55:19.023(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-02:55:19.023(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-02:55:19.023(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-02:55:19.023(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-02:55:19.023(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-02:55:19.023(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:05:19.025(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:05:19.026(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:05:19.026(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:05:19.026(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:05:19.026(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:05:19.026(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:05:19.026(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:05:19.027(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:05:19.027(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:05:19.027(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:05:19.027(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:15:19.028(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:15:19.028(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:15:19.028(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:15:19.028(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:15:19.029(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:15:19.029(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:15:19.029(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:15:19.029(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:15:19.029(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:15:19.029(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:15:19.029(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:25:19.031(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:25:19.032(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:25:19.032(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:25:19.032(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:25:19.032(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:25:19.032(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:25:19.033(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:25:19.033(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:25:19.034(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:25:19.034(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:25:19.034(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:35:19.034(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:35:19.035(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:35:19.035(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:35:19.036(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:35:19.036(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:35:19.036(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:45:19.038(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:45:19.039(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:45:19.039(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:45:19.039(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:45:19.039(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:45:19.039(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:45:19.039(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:45:19.040(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:45:19.040(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:45:19.040(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:45:19.040(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-03:55:19.040(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-03:55:19.040(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-03:55:19.041(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-03:55:19.042(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-03:55:19.042(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-03:55:19.042(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:05:19.042(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:05:19.043(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:05:19.043(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:05:19.043(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:05:19.043(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:05:19.044(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:05:19.044(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:05:19.044(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:05:19.044(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:05:19.044(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:05:19.044(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:15:19.046(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:15:19.047(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:15:19.047(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:15:19.047(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:15:19.047(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:15:19.048(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:15:19.048(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:15:19.048(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:15:19.048(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:15:19.048(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:15:19.048(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:25:19.051(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:25:19.051(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:25:19.051(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:25:19.051(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:25:19.052(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:25:19.052(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:25:19.052(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:25:19.052(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:25:19.052(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:25:19.052(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:25:19.052(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:35:19.054(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:35:19.055(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:35:19.055(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:35:19.056(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:35:19.056(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:35:19.056(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:45:19.056(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:45:19.057(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:45:19.057(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:45:19.057(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:45:19.057(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:45:19.057(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:45:19.058(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:45:19.058(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:45:19.058(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:45:19.058(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:45:19.058(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-04:55:19.059(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-04:55:19.060(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-04:55:19.060(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-04:55:19.060(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-04:55:19.060(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-04:55:19.060(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-04:55:19.061(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-04:55:19.061(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-04:55:19.061(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-04:55:19.061(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-04:55:19.061(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:05:19.063(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:05:19.064(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:05:19.064(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:05:19.064(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:05:19.064(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:05:19.064(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:05:19.064(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:05:19.065(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:05:19.065(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:05:19.065(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:05:19.065(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:15:19.066(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:15:19.066(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:15:19.067(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:15:19.067(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:15:19.068(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:15:19.068(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:25:19.069(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:25:19.070(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:25:19.070(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:25:19.070(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:25:19.070(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:25:19.071(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:25:19.071(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:25:19.071(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:25:19.071(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:25:19.071(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:25:19.071(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:35:19.073(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:35:19.074(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:35:19.074(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:35:19.074(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:35:19.074(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:35:19.074(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:35:19.074(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:35:19.075(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:35:19.075(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:35:19.075(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:35:19.075(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:45:19.076(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:45:19.077(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:45:19.077(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:45:19.078(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:45:19.078(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:45:19.078(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-05:55:19.079(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-05:55:19.080(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-05:55:19.080(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-05:55:19.080(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-05:55:19.081(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-05:55:19.081(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:05:19.082(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:05:19.083(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:05:19.083(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:05:19.083(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:05:19.084(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:05:19.084(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:05:19.084(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:05:19.084(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:05:19.084(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:05:19.085(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:05:19.085(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:15:19.086(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:15:19.087(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:15:19.087(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:15:19.087(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:15:19.087(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:15:19.088(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:15:19.088(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:15:19.088(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:15:19.088(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:15:19.088(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:15:19.088(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:25:19.090(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:25:19.091(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:25:19.091(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:25:19.091(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:25:19.091(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:25:19.091(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:25:19.092(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:25:19.092(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:25:19.092(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:25:19.092(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:25:19.092(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:35:19.097(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:35:19.097(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:35:19.098(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:35:19.098(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:35:19.098(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:35:19.099(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:45:19.100(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:45:19.101(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:45:19.101(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:45:19.101(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:45:19.101(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:45:19.101(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:45:19.101(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:45:19.102(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:45:19.102(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:45:19.102(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:45:19.102(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-06:55:19.103(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-06:55:19.104(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-06:55:19.104(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-06:55:19.104(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-06:55:19.105(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-06:55:19.105(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-06:55:19.105(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-06:55:19.105(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-06:55:19.105(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-06:55:19.105(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-06:55:19.106(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:05:19.105(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:05:19.106(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:05:19.106(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:05:19.107(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:05:19.107(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:05:19.107(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:15:19.108(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:15:19.108(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:15:19.109(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:15:19.109(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:15:19.110(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:15:19.110(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:25:19.111(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:25:19.111(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:25:19.112(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:25:19.112(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:25:19.113(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:25:19.113(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:35:19.114(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:35:19.115(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:35:19.115(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:35:19.115(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:35:19.115(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:35:19.115(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:35:19.115(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:35:19.116(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:35:19.116(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:35:19.116(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:35:19.116(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:45:19.116(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:45:19.117(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:45:19.117(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:45:19.117(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:45:19.117(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:45:19.117(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:45:19.117(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:45:19.118(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:45:19.118(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:45:19.118(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:45:19.118(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-07:55:19.119(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-07:55:19.120(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-07:55:19.120(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-07:55:19.120(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-07:55:19.120(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-07:55:19.120(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-07:55:19.121(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-07:55:19.121(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-07:55:19.121(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-07:55:19.121(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-07:55:19.121(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:05:19.122(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:05:19.122(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:05:19.122(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:05:19.122(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:05:19.122(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:05:19.122(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:05:19.123(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:05:19.123(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:05:19.123(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:05:19.123(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:05:19.123(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:15:19.124(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:15:19.124(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:15:19.125(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:15:19.125(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:15:19.125(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:15:19.126(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:25:19.128(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:25:19.129(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:25:19.129(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:25:19.130(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:25:19.130(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:25:19.130(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:35:19.131(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:35:19.132(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:35:19.132(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:35:19.133(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:35:19.133(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:35:19.133(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:45:19.147(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:45:19.148(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:45:19.148(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:45:19.148(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:45:19.148(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:45:19.148(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:45:19.149(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:45:19.149(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:45:19.149(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:45:19.149(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:45:19.149(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-08:55:19.152(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-08:55:19.153(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-08:55:19.153(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-08:55:19.153(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-08:55:19.153(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-08:55:19.153(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-08:55:19.154(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-08:55:19.154(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-08:55:19.154(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-08:55:19.154(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-08:55:19.154(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:05:19.157(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:05:19.157(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:05:19.158(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:05:19.159(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:05:19.159(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:05:19.159(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:15:19.160(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:15:19.160(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:15:19.161(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:15:19.161(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:15:19.162(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:15:19.162(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:25:19.162(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:25:19.163(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:25:19.163(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:25:19.163(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:25:19.163(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:25:19.164(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:25:19.164(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:25:19.164(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:25:19.164(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:25:19.164(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:25:19.164(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:35:19.164(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:35:19.165(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:35:19.165(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:35:19.165(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:35:19.165(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:35:19.165(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:35:19.165(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:35:19.166(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:35:19.166(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:35:19.166(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:35:19.166(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:45:19.168(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:45:19.169(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:45:19.169(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:45:19.169(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:45:19.169(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:45:19.169(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:45:19.169(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:45:19.170(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:45:19.170(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:45:19.170(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:45:19.170(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-09:55:19.172(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-09:55:19.172(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-09:55:19.173(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-09:55:19.173(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-09:55:19.173(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-09:55:19.174(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:05:19.176(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:05:19.176(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:05:19.177(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:05:19.177(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:05:19.177(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:05:19.178(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:15:19.178(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:15:19.179(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:15:19.179(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:15:19.180(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:15:19.180(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:15:19.180(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:25:19.180(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:25:19.181(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:25:19.181(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:25:19.181(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:25:19.181(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:25:19.181(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:25:19.182(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:25:19.182(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:25:19.182(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:25:19.182(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:25:19.182(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:35:19.183(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:35:19.183(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:35:19.183(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:35:19.184(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:35:19.184(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:35:19.184(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:35:19.184(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:35:19.184(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:35:19.184(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:35:19.184(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:35:19.185(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:45:19.187(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:45:19.187(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:45:19.187(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:45:19.188(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:45:19.188(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:45:19.188(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:45:19.188(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:45:19.188(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:45:19.188(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:45:19.188(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:45:19.189(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-10:55:19.190(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-10:55:19.190(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-10:55:19.190(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-10:55:19.191(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-10:55:19.191(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-10:55:19.191(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-11:05:19.206(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-11:05:19.206(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-11:05:19.207(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-11:05:19.207(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-11:05:19.208(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-11:05:19.208(-8)? [39m    at packages/meteor/timers.js:6:1
+[34mI20151118-11:15:19.209(-8)? [39mException in setInterval callback: Error: When the modifier option is true, validation object must have at least one operator
+[34mI20151118-11:15:19.209(-8)? [39m    at checkModifier (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2293:1)
+[34mI20151118-11:15:19.209(-8)? [39m    at doValidation1 (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2343:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at doValidation (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2758:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at SimpleSchemaValidationContext.simpleSchemaValidationContextValidate [as validate] (packages/aldeed_simple-schema/packages/aldeed_simple-schema.js:2793:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at [object Object].doValidate (packages/aldeed_collection2/packages/aldeed_collection2.js:372:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at [object Object].Mongo.Collection.(anonymous function) [as update] (packages/aldeed_collection2/packages/aldeed_collection2.js:177:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at AccountsServer.Ap._expireTokens (accounts_server.js:1090:14)
+[34mI20151118-11:15:19.210(-8)? [39m    at accounts_server.js:1128:14
+[34mI20151118-11:15:19.210(-8)? [39m    at [object Object]._.extend.withValue (packages/meteor/dynamics_nodejs.js:56:1)
+[34mI20151118-11:15:19.210(-8)? [39m    at packages/meteor/timers.js:6:1

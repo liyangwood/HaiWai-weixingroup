@@ -11,8 +11,10 @@ Template.addFeed.events({
                 console.log(flag, url);
                 if(flag){
                     btn.button('reset');
-                    var img_str = '<img src="'+url+'" style="width: 50px; height: 50px;" class="js_img" />';
-                    $('.js_image_box').append(img_str);
+                    var img_str = '<img src="'+url+'" />';
+
+                    var img = CKEDITOR.dom.element.createFromHtml(img_str);
+                    F.ck.insertElement(img);
                 }
             });
         }
@@ -58,5 +60,26 @@ Template.addFeed.events({
 });
 
 Template.addFeed.helpers(function(){
+
+});
+
+var F = {
+    ck : null,
+
+    loadCKEditor : function(){
+
+        if(typeof CKEDITOR !== 'undefined'){
+            F.ck = CKEDITOR.appendTo('js_textarea', Const.CKEditor.config);
+        }
+        else{
+            util.delay(F.loadCKEditor, 200);
+        }
+
+    }
+};
+
+Template.addFeed.onRendered(function(){
+    F.loadCKEditor();
+
 
 });
