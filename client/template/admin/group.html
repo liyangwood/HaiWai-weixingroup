@@ -1,0 +1,138 @@
+<template name="AdminGroupList">
+
+    <div class="container">
+        <table class="hw-admin-table">
+            <tr>
+                <th>头像</th>
+                <th>名称</th>
+                <th>群主</th>
+                <th>操作</th>
+            </tr>
+
+            {{#each list}}
+                <tr>
+                    <td><img style="width: 40px;height: 40px;" src="{{image}}" /></td>
+                    <td>{{name}}</td>
+                    <td>{{ownerId}}</td>
+                    <td>
+                        <a href="{{pathFor 'AdminGroupEdit' groupId=_id}}" class="btn btn-info">Edit</a>
+                        <button class="btn btn-danger js_del" param="{{_id}}">Del</button>
+                    </td>
+                </tr>
+            {{/each}}
+
+        </table>
+    </div>
+
+</template>
+
+<template name="AdminGroupEdit">
+    <form class="container hw-add-weixinGroup form-horizontal js_form" style="margin-bottom: 50px;">
+        {{#with data}}
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群名称</label>
+            <div class="col-sm-9">
+                <input type="text" role="name" value="{{name}}" class="form-control" placeholder="微信群名称">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群所在地区</label>
+            <div class="col-sm-9">
+                <input type="text" role="location" value="{{location}}" class="form-control" placeholder="如果不确定，可以以群主所在地为准">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">群所在地邮编</label>
+            <div class="col-sm-9">
+                <input type="text" role="postCode" value="{{postCode}}" class="form-control" placeholder="例如：94537">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群主题</label>
+            <div class="col-sm-9">
+
+                <select role="catId" class="form-control">
+                    <option value="-1">请选择</option>
+
+                    {{#each categoryList}}
+                        <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群标签</label>
+            <div class="col-sm-9">
+                <input type="text" role="tag" value="{{tag}}" class="form-control" placeholder="逗号隔开 例如:理财，修车，团购……">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">目前群人数</label>
+            <div class="col-sm-9">
+
+                <select role="memberCount" class="form-control">
+                    <option value="100人以下">100人以下</option>
+                    <option value="100-300人">100-300人</option>
+                    <option value="300以上">300以上</option>
+                    <option value="基本满的（500左右）">基本满的（500左右）</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">群主微信号</label>
+            <div class="col-sm-9">
+                <input type="text" role="ownerId" value="{{ownerId}}" class="form-control" placeholder="wechat ID">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">群简介</label>
+            <div class="col-sm-9">
+                <textarea class="form-control js_info" role="description" value="{{description}}" placeholder=""></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label require">头像</label>
+            <div class="col-sm-9 js_box">
+                <input type="hidden" role="image" value="{{image}}" class="form-control" placeholder="">
+
+                <a data-loading-text="上传头像中..."
+                   class="btn hw-blue-button js_uploadbtn" style="width: 120px;">上传</a>
+
+                <input type="file" style="opacity: 0;position: absolute;top: 0;width: 120px;height: 40px;" role="upload_image" class="form-control">
+
+                <img src="{{image}}" style="width: 50px; height: 50px;" class="js_img" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">群二维码</label>
+            <div class="col-sm-9 js_box">
+                <input type="hidden" role="qrCode" value="{{qrCode}}" class="form-control" placeholder="">
+
+                <a data-loading-text="上传中..."
+                   class="btn hw-blue-button js_uploadbtn" style="width: 120px;">上传</a>
+
+                <input type="file" style="opacity: 0;position: absolute;top: 0;width: 120px;height: 40px;" role="upload_image" class="form-control">
+
+                <img src="{{qrCode}}" style="width: 50px; height: 50px;" class="js_img" />
+            </div>
+        </div>
+
+        <button style="margin-top: 40px;" data-loading-text="正在提交..." type="button" class="js_btn1 btn hw-blue-button">确认</button>
+
+        {{/with}}
+    </form>
+</template>

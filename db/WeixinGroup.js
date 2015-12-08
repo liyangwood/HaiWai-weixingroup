@@ -79,6 +79,9 @@ WeixinGroup.attachSchema(new SimpleSchema({
 WeixinGroup.allow({
     insert : function(){
         return true;
+    },
+    update : function(){
+        return true;
     }
 });
 
@@ -126,7 +129,22 @@ _.extend(WeixinGroup, {
         });
 
     },
-    updateData : function(){}
+    updateData : function(id, data, callback){
+        var catId = data.catId,
+            category = _.find(WeixinGroupCategory, function(item){
+                return catId === item.id;
+            });
+        if(!category){
+            callback('请选择群主题', null);
+            return;
+        }
+        data.category = category.name;
+        data.updateTime = Date.now();
+
+        WeixinGroup.update({_id: id}, {$set:data}, function(err, uuid){
+            callback(err, uuid);
+        });
+    }
 });
 
 

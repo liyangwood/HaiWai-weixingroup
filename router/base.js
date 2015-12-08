@@ -66,7 +66,7 @@ Router.onBeforeAction(function(){
 
         var uid = Cookie.get('uid');
         var user = Meteor.users.findOne({_id:uid});
-        console.log(user);
+        //console.log(user);
         if(user){
             Session.set('user', user);
         }
