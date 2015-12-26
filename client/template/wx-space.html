@@ -19,17 +19,50 @@
 </template>
 
 <template name="wxSpaceNameBlock">
-    <div class="hw-full-container hw-sp-card">
-        <div class="container box">
-            <img src="{{image}}" />
-            <p class="c1">{{name}}</p>
-            <p class="c2">{{category}}</p>
-            <p class="c3">{{description}}</p>
+    <div class="hw-wg-item-page">
 
-            <a class="c_new" href="{{pathFor 'addFeed' sid=wxSpaceId}}">发布新Feed</a>
+        <div class="c1">
+            <img class="c_img" src="{{image}}" />
         </div>
 
+        <div class="c2 container">
+            <h4>{{name}}</h4>
+            <p class="c_des">{{description}}</p>
+
+            <!--<label style="margin-top: 20px;">群主微信 ：{{owner}}</label>-->
+            <label>行业类别 ：{{category}}</label>
+            <label>所在区域 ：{{location}}</label>
+            <label>群标签 ：{{tag}}</label>
+
+            <label>目前人数 ：{{memberCount}}</label>
+
+            <label>添加时间 ：{{formatDate createTime}}</label>
+
+
+                <!--{{#if qrCode}}-->
+            <!--<div class="c_qr"><img src="{{qrCode}}"></div>-->
+                <!--{{/if}}-->
+
+
+            <div class="page-header hw-pager-header" style="margin-top: 25px;">
+                <small style="text-align: left; font-size: 14px;">想要加入该群？请留下您的微信账号，群主会联系您。</small>
+
+                <div class="input-group" style="margin-top: 10px;">
+                    <input type="text" class="form-control js_wx" placeholder="请输入微信账号">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success js_addbtn" type="button">确认</button>
+                        </span>
+                </div><!-- /input-group -->
+
+            </div>
+
+            <a class="c_new" href="{{pathFor 'addFeed' sid=wxSpaceId}}">发布新Feed</a>
+
+        </div>
+
+
     </div>
+
 
 </template>
 
